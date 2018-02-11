@@ -8,7 +8,7 @@
 #include <EEPROM.h>
 
 #define N_SERVOS 4
-#define EEPROM_TRIM false //Activate for calibration
+#define EEPROM_TRIM true //Activate for calibration
 
 #define TRIM_RR 18
 #define TRIM_RL 18
@@ -40,7 +40,7 @@ void flapping(int steps, int T=1000);
 
 void setup()
 {
-  Serial.begin(19200);
+  Serial.begin(15200);
   
   servo[0].attach(PIN_RR);
   servo[1].attach(PIN_RL);

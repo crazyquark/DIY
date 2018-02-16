@@ -40,10 +40,9 @@ void setup()
   Serial.begin(9600);
   Serial.println("hello");
   
-  //Set the servo pins
-  Otto.init(PIN_LEFT_LEG,PIN_RIGHT_LEG,PIN_LEFT_FOOT,PIN_RIGHT_FOOT,true);
-  Otto.setTrims(TRIM_LEFT_LEG,TRIM_RIGHT_LEG, TRIM_LEFT_FOOT, TRIM_RIGHT_FOOT);
-
+  //Set the servo pins, enable calibration and buzzer
+  Otto.init(PIN_LEFT_LEG, PIN_RIGHT_LEG, PIN_LEFT_FOOT, PIN_RIGHT_FOOT,true, -1, 10);
+  
   Otto.sing(S_connection); //Otto wake up!
   Otto.home();
 

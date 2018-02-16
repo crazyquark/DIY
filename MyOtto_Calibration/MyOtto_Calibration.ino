@@ -14,12 +14,12 @@ void setup()
 {
   Otto.init(2, 3, 4, 5, false);
   /*
-   * Right ankle: 28
-    Left ankle: -9
-    Right hip: -6
-    Left hip: -7
+    Right ankle: 1
+    Left ankle: 2
+    Right hip: -2
+    Left hip: -9
    */
-  Otto.setTrims(-6, -7, -9, 28); //change Trim "offset values" gradually until Otto is completely straight (90º)
+  Otto.setTrims(-9, -2, 2, 1); //change Trim "offset values" gradually until Otto is completely straight (90º)
   
   //Otto.saveTrimsOnEEPROM(); //use only after completely straight(90º), delete this line after for further programming
 }

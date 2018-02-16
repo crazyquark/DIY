@@ -40,7 +40,7 @@ void flapping(int steps, int T=1000);
 
 void setup()
 {
-  Serial.begin(15200);
+  Serial.begin(115200);
   
   servo[0].attach(PIN_RR);
   servo[1].attach(PIN_RL);
